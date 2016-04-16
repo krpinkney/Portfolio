@@ -1,10 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald|Droid+Serif);
+
 * {
     outline: solid yellow 1px;
 }
 
 body {
-    background-color: #e9e9e9;
+    background-color: #f4f4f4;
     margin: 0;
+    font-family: 'Droid Serif', serif;
 }
 
 .header {
@@ -15,6 +18,7 @@ body {
     margin: auto;
     max-width: 900px;
     padding:0px 25px 0px 25px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .logo {
@@ -22,6 +26,7 @@ body {
     text-align: left;
     margin-top:40px;
     font-size: 0.75em;
+    color: #30707b;
 }
 
 .links {
@@ -29,4 +34,43 @@ body {
     text-align: right;
     margin-top: 40px;
     font-size: 0.75em;
+    color: #444444;
+}
+
+.links a {
+    text-decoration: none;
+    color:#444444;
+    padding-left: 25px;
+}
+
+.banner {
+    background-color: #526d75;
+    height: 450px;
+    text-align:center;
+}
+
+.banner img {
+    height: 225px;
+    width: 225px;
+    float: right;
+    margin-top: 110px;
+    margin-right: 300px;
+}
+
+.graphic {
+    height: 420px;
+    width: 950px;
+    border: solid 3px #f4f4f4;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.work {
+    text-align:center;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.25em;
+    color: #444444;
 }
