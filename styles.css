@@ -8,7 +8,34 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     font-family: 'Droid Serif', serif;
-    
+}
+
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.25em;
+    color: #444444;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.25em;
+    color: #444444;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    color: #444444;
+}
+
+p {
+    font-family: 'Droid Serif', serif;
+    font-size: 0.85em;
+}
+
+a {
+    text-decoration:none;
 }
 
 .header {
@@ -44,22 +71,14 @@ body {
     padding-left: 25px;
 }
 
-.banner {
+.bannerBackground {
     background-color: #526d75;
     height: 450px;
     text-align:center;
     padding-top:20px;
 }
 
-.banner img {
-    height: 260px;
-    width: 260px;
-    float: right;
-    margin-top: 80px;
-    margin-right: 175px;
-}
-
-.graphic {
+.banner {
     height: 420px;
     width: 950px;
     border: solid 3px #f4f4f4;
@@ -68,44 +87,52 @@ body {
     text-align: center;
 }
 
-.graphic h1 {
-    padding:190px 0 0px 0;
-    margin-left: 90px;
+.banner img {
+    height: 260px;
+    width: 260px;
+    float: right;
+    margin-top: 80px;
+    margin-right: 145px;
+}
+
+.banner h1 {
+
+    padding:190px 0 4px 0;
+    margin-left: 140px;
     color: #e9e9e9;
     letter-spacing: 2px;
     border-bottom: solid #e9e9e9 2px;
     max-width: 350px;
 }
 
-.graphic h3 {
+.banner h3 {
     color: #e9e9e9;
     position:relative;
-    top:-12px;
+    top:-15px;
+    right: -40px;
 }
 
 .work {
     text-align:center;
 }
 
-h1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2.25em;
-    color: #444444;
+
+.aboutBackground {
+    background-color: #b4b7be;
+    height: 350px;
 }
 
-h2 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.25em;
-    color: #444444;
+.about {
+    color:#e9e9e9;
+    max-width:900px;
+    padding: 15px 0 0 0;
 }
 
-h3 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1em;
-    color: #444444;
+.about img {
+     height: 250px;
+     width: 250px;
+     float:left;
+     margin: 40px 25px 0 75px;
 }
 
-p{
-    font-family: 'Droid Serif', serif;
-    font-size: 0.85em;
-}
+
