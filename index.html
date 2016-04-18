@@ -6,32 +6,38 @@
     <title>Kristina Pinkney - Design & Other Things</title>
 
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="lightbox/css/lightbox.min.css">
+    
+    <link rel="stylesheet" href="PrettyPhotoLightbox/css/prettyphoto.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript" type="text/javascript"></script>
+    <script src="PrettyPhotoLightbox/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+    
+
+    
     <link rel="icon" type="image/png" href="images/icon.png">
     
 </head>
 
 <body>
 <!--HEADER AND NAVIGATION-->    
-<div class="header">
-    <div class="nav">
-        <div class="logo">KRISTINA PINKNEY</div>
+<header class="large">
+    <nav class="large">
+        <div class="logo"><a href="index.html">KRISTINA PINKNEY</div></a>
         <div class="links">
-            <a href="#">HOME</a>
+            <a href="index.html">HOME</a>
             <a href="#design">DESIGN</a>
             <a href="#photography">PHOTOGRAPHY</a>
             <a href="#videography">VIDEOGRAPHY</a>
             <a href="#aboutBackground">ABOUT</a>
         </div>
-    </div>
-</div>
+    </nav>
+</header>
 
 <!--BANNER-->
 <div class="bannerBackground">
     <div class="banner">
         <img src="images/bannerImage.png" alt= "Banner Image" />
         <h1>KRISTINA PINKNEY</h1>
-        <h3>DESIGN & OTHER THINGS</h3>
+        <h3>DESIGN & OTHER THINGS</h3></a>
     </div>
 </div>
 
@@ -39,45 +45,45 @@
 <div class="work">
     <div id="design">
         <h2>DESIGN</h2>
-        <a href="images/design/bannersArt_lrg.png" data-lightbox="design" />
+        <a href="images/design/bannersArt_lrg.png" rel="prettyPhoto[design]" />
             <img src="images/design/bannersArt_sml.png" alt="Banners Line Art"/>
         </a>
-        <a href="images/design/mistoffeleesPoster_lrg.jpg" data-lightbox="design" />
+        <a href="images/design/mistoffeleesPoster_lrg.jpg" rel="prettyPhoto[design]" />
             <img src="images/design/mistoffeleesPoster_sml.jpg" alt="Mistoffelees Poster"/>
         </a>
-        <a href="images/design/leadTheCrowd_lrg.jpg" data-lightbox="design" />
+        <a href="images/design/leadTheCrowd_lrg.jpg" rel="prettyPhoto[design]" />
             <img src="images/design/leadTheCrowd_sml.jpg" alt="Lead The Crowd Typography" />
         </a>
     </div>
     
     <div id="photography">
         <H2>PHOTOGRAPHY</H2>
-        <a href="images/photography/teacup1_lrg.jpg" data-lightbox="photography">
+        <a href="images/photography/teacup1_lrg.jpg" rel="prettyPhoto[photography]">
             <img src="images/photography/teacup1_sml.jpg" alt="Teacup Image"/>
         </a>
-        <a href="images/photography/cat1_lrg.jpg" data-lightbox="photography">
+        <a href="images/photography/cat1_lrg.jpg" rel="prettyPhoto[photography]">
             <img src="images/photography/cat1_sml.jpg" alt="Cat Image"/>
         </a>
-        <a href="images/photography/reflection_lrg.jpg" data-lightbox="photography">
+        <a href="images/photography/reflection_lrg.jpg" rel="prettyPhoto[photography]">
             <img src="images/photography/reflection_sml.jpg" alt="Reflection Image"/>
         </a>     
     </div>
     
     <div id="videography">
         <H2>VIDEOGRAPHY</H2>
-        <a href=" " data-lightbox="videography">
-            <img src="images/videography/dylJanuary2016_sml.jpg" alt="Document Your Life January"/>
-        </a>
-        <a href=" " data-lightbox="videography">
-            <img src="images/videography/camp2015_sml.jpg" alt="Camp 2015"/>
-        </a>
-        <a href=" " data-lightbox="videography">
+         
+        <a href="https://www.youtube.com/watch?v=XVhhXA1wyYc" rel="prettyPhoto[videography]">
             <img src="images/videography/tinyArt_sml.jpg" alt="Tiny Art"/>
         </a>
+        <a href="https://www.youtube.com/watch?v=hcMsn-oufVU" rel="prettyPhoto[videography]">
+            <img src="images/videography/camp2015_sml.jpg" alt="Camp 2015"/>
+        </a>
+        <a href="https://www.youtube.com/watch?v=HHE1aXsa0bI" rel="prettyPhoto[videography]">
+            <img src="images/videography/dylfebruary2016_sml.jpg" alt="Document Your Life February"/>
+        </a>
+
     </div>
 </div>
-<!--LIGHTBOX SCRIPT-->
-<script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
 
 <!--ABOUT-->
 <div id="aboutBackground">
@@ -86,7 +92,7 @@
         <h2>LET ME INTRODUCE MYSELF</h2>
         <p>My name is Kristina Pinkney. I’m currently an 18 year old design student at Massey University’s Colledge of Creative Arts in Wellington, New Zealand.</p>
 
-        <p>I have a love for design, photography, filmmaking and all things visually appealing, as well as music (especially the indie kind). </p>
+        <p>I have a love for design, photography, filmmaking and all things visually appealing, as well as music (especially the indie and alternative kinds). </p>
 
         <p>When I’m not hidden away in my room doing some video editing, watching a good tv show, or listening to a bit of music, you can probably find me out and about, exploring new places and filming for an online video project called ‘Document Your Life’ or petting the local cat.</p>
 
@@ -99,9 +105,41 @@
     </div>
 </div>
 
+<!-- FOOTER -->
 <div class="footer">
-    <p>KRISTINA PINKNEY 2016</p>
+    <p>MADE BY <span style="color:#30707b;">KRISTINA PINKNEY</span> 2016</p>
 </div>
+
+<!-- JAVASCRIPT -->
+<script type="text/javascript" charset="utf-8">
+/* Pretty Photo Lightbox */
+	$(document).ready(function(){
+		$("a[rel^='prettyPhoto']").prettyPhoto({
+			show_title: false,
+			theme: 'dark_rounded',
+			autoplay: false, 
+			allow_expand: false,
+			social_tools: ' ' 
+		});
+	});
+    
+/* Resizing Header */
+    $(document).on("scroll",function(){
+    if($(document).scrollTop()>100){
+        $("header").removeClass("large").addClass("small");
+    } else{
+        $("header").removeClass("small").addClass("large");
+    }
+    });
+
+    $(document).on("scroll",function(){
+    if($(document).scrollTop()>100){
+        $("nav").removeClass("large").addClass("small");
+    } else{
+        $("nav").removeClass("small").addClass("large");
+    }
+    });
+</script>
 
 </body>
 </html>

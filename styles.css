@@ -7,9 +7,8 @@
 body {
     background-color: #f4f4f4;
     margin: 0;
-    font-family: 'Droid Serif', serif;
+    font-family: 'Droid Serif', serif; 
 }
-
 
 h1 {
     font-family: 'Oswald', sans-serif;
@@ -38,7 +37,7 @@ a {
     text-decoration:none;
 }
 
-.header {
+header.large {
     position: fixed;
     top: 0;
     left: 0;
@@ -48,25 +47,51 @@ a {
     background-color: #f4f4f4;
 }
 
-.nav {
+header.small {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 60px;
+    background-color: #f4f4f4;
+    
+    box-shadow: 0 0 10px #999; 
+     -moz-box-shadow: 0 0 10px #999;
+     -webkit-box-shadow: 0 0 10px #999;
+}
+
+nav.large {
     margin: auto;
     max-width: 900px;
     padding:0px 25px 0px 25px;
     font-family: 'Oswald', sans-serif;
+    margin-top:40px;
+}
+
+nav.small {
+    margin: auto;
+    max-width: 900px;
+    padding:0px 25px 0px 25px;
+    font-family: 'Oswald', sans-serif;
+    margin-top:20px;
 }
 
 .logo {
     float:left;
     text-align: left;
-    margin-top:40px;
     font-size: 0.75em;
+    color: #30707b;
+}
+
+.logo a {
+    text-decoration: none;
     color: #30707b;
 }
 
 .links {
     float:right;
     text-align: right;
-    margin-top: 40px;
     font-size: 0.75em;
     color: #444444;
 }
@@ -79,6 +104,13 @@ a {
 
 .links a:hover {
     color: #30707b;
+}
+
+header, nav, .logo, .links{
+  transition: all 1s;
+  -moz-transition: all 1s; /* Firefox 4 */
+  -webkit-transition: all 1s; /* Safari and Chrome */
+  -o-transition: all 1s; /* Opera */
 }
 
 .bannerBackground {
@@ -133,6 +165,11 @@ a {
     padding: 0 5px 10px 5px;
 }
 
+#design , #photography , #videography  {
+    margin-top: -50px;
+    padding-top: 50px;
+}
+
 #aboutBackground {
     background-color: #b4b7be;
     height: 350px;
@@ -153,7 +190,7 @@ a {
 }
 
 .about h2, h3 {
-    color: #e9e9e9;
+    color: #f4f4f4;
 }
 
 .socialMedia img {
@@ -174,4 +211,3 @@ a {
     font-size:0.75em;
     color: #444444;
 }
-
